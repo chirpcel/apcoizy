@@ -2,3 +2,9 @@
 # moon
 .moon/cache
 .moon/docker
+
+# rust
+debug/
+target/
+**/*.rs.bk
+*.pdb
