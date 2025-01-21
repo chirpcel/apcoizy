@@ -6,7 +6,10 @@
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
-        "linkedProjects": ["packages/foundation/Cargo.toml"]
+        "linkedProjects": [
+          "packages/foundation/Cargo.toml",
+          "packages/backend/Cargo.toml"
+        ]
       }
     }
   }

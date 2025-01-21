@@ -1,0 +1,22 @@
+# https://moonrepo.dev/docs/config/project
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+language: "rust"
+stack: "backend"
+type: "library"
+dependsOn:
+  - "foundation"
+
+project:
+  name: "backend"
+  description: "Apcoizy backend composed of multiple packages"
+
+tasks:
+  format:
+    command: "cargo fmt"
+  check:
+    command: "cargo check && cargo clippy"
+  test:
+    command: "cargo test"
+  build:
+    command: "cargo build"
