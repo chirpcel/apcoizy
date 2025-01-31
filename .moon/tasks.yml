@@ -1,0 +1,14 @@
+# https://moonrepo.dev/docs/config/tasks
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+tasks:
+  format:
+    command: "cargo fmt"
+  check:
+    command: "cargo check"
+  lint:
+    command: "cargo clippy"
+  test:
+    command: "cargo test"
+  build:
+    command: "cargo build"

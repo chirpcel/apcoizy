@@ -8,13 +8,3 @@ type: "library"
 project:
   name: "foundation"
   description: "Common components shared by multiple apcoizy packages"
-
-tasks:
-  format:
-    command: "cargo fmt"
-  check:
-    command: "cargo check && cargo clippy"
-  test:
-    command: "cargo test"
-  build:
-    command: "cargo build"

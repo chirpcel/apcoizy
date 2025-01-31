@@ -10,13 +10,3 @@ dependsOn:
 project:
   name: "backend"
   description: "Apcoizy backend composed of multiple packages"
-
-tasks:
-  format:
-    command: "cargo fmt"
-  check:
-    command: "cargo check && cargo clippy"
-  test:
-    command: "cargo test"
-  build:
-    command: "cargo build"
