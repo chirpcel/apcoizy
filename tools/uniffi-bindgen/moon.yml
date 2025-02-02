@@ -1,0 +1,17 @@
+# https://moonrepo.dev/docs/config/project
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+language: "rust"
+stack: "infrastructure"
+type: "tool"
+dependsOn:
+  - "backend"
+
+project:
+  name: "uniffi-bindgen"
+  description: "A multi-language bindings generator for rust"
+
+tasks:
+  bindgen:
+    description: "Generate bindings for the backend library"
+    command: "cargo run generate --library ../../packages/backend/target/debug/libbackend.dylib --language swift --out-dir ../../packages/backend/target/debug/bindgen-swift"
